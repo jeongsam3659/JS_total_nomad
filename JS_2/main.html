@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>J2</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <h1>Form 제출</h1>
+        </header>
+        <form id="loginform" class="writeForm hidden">
+            <input type="text" maxlength="15" placeholder="당신의 이름을 입력해주세요." required />
+            <input type="submit" value="제출" />
+        </form>
+        <div class="answerlocal">
+            <h1 id="answer" class="hidden"></h1>
+            <button id="btn_reset" class="resetBtn">스토리지 리셋</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

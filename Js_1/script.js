@@ -13,7 +13,7 @@ const player = {
     point: 10,
     fat: true,
 };
-console.log("---list 값에 대한 변화.---");
+console.log("---객체 값에 대한 변화.---");
 console.log("player :" + player);
 console.log("player.name: " + player.name);
 console.log("player['name']: " + player["name"]);
