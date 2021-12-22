@@ -10,12 +10,12 @@ function actionRandomNum(e) {
         maxNum.focus();
         console.log("최대 범위 input칸이 비어있습니다.");
         return;
-        // Quest1
-        if (inPlayerNum.value === "") {
-            inPlayerNum.focus();
-            console.log("플레이어 input칸이 비어있습니다.");
-            return;
-        }
+    }
+
+    if (inPlayerNum.value === "") {
+        inPlayerNum.focus();
+        console.log("플레이어 input칸이 비어있습니다.");
+        return;
     }
 
     const max = maxNum.value;
@@ -44,4 +44,9 @@ rsForm.addEventListener("submit", actionRandomNum);
     최대범위의 수가 비어있을때는 console.log()와 focus가 정상적으로 작동하는데
     최대범위의수가 있는 상태에서 플레이어예상수(inputNum)이 비어있을때 action이 작동하지 않느다.
 
+    ------------------- // ------------------
+    해결
+    중복 if문이 아닌 개별 if으로 진행.
+
+    if(1)최대범위수 return > if(2)플레이어 예상수 return > 본 기능 실행.
 */
